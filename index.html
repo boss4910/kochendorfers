@@ -27,19 +27,17 @@
             padding-bottom: 5px;
             margin-top: 40px;
         }
-        ul {
-            list-style: none;
-            padding-left: 0;
+        .menu-button {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
         }
-        .menu-item {
-            display: flex;
-            justify-content: space-between;
-            margin: 6px 0;
-        }
-        .category {
-            margin-top: 25px;
-            font-weight: bold;
-            font-size: 1.2em;
+        .menu-button:hover {
+            background: #444;
         }
         footer {
             text-align: center;
@@ -64,138 +62,14 @@
     <h2>We Are Now Open</h2>
     <p><strong>Hours:</strong></p>
     <p>Sunday–Thursday: 11am–11pm</p>
-    <p>Friday–Saturday: 11am–1am</p>
+    <p>Friday–Saturday: 11am–2am</p>
+
+    <a class="menu-button" href="menu.pdf" target="_blank">View Menu (PDF)</a>
 </section>
 
 <section>
     <h2>Photos</h2>
     <p>Photos coming soon.</p>
-</section>
-
-<section>
-    <h2>From the Kitchen</h2>
-
-    <div class="category">Kebaburritos</div>
-    <p>Served wrapped in a flour tortilla. Add potato salad or shoestring fries $4.</p>
-    <ul>
-        <li class="menu-item"><span>The Turkish</span><span>$14</span></li>
-        <li>Lamb & beef mix, lettuce/cabbage blend, red onion, sriracha & garlic sauce.</li>
-
-        <li class="menu-item"><span>The John Boy</span><span>$14</span></li>
-        <li>Lamb & beef mix, black beans, red onion, mozzarella & garlic sauce.</li>
-
-        <li class="menu-item"><span>Bean & Cheese Burrito</span><span>$8</span></li>
-        <li>Black beans & mozzarella.</li>
-    </ul>
-
-    <div class="category">Uli's Famous Sausages</div>
-    <ul>
-        <li>German Bratwurst — sauerkraut & whole grain mustard</li>
-        <li>Cajun Chicken — spicy garlic slaw</li>
-        <li>Smoked Jalapeño Cheddar — bacon red cabbage chutney</li>
-    </ul>
-
-    <ul>
-        <li class="menu-item"><span>The Hoagie</span><span>$10</span></li>
-        <li>Choice of sausage on a hoagie roll. Add potato salad or fries $4.</li>
-
-        <li class="menu-item"><span>The Plate</span><span>$13</span></li>
-        <li>Choice of sausage & sauce, served with potato salad. Add sausage $5. Sub fries free.</li>
-    </ul>
-
-    <div class="category">Small Plates</div>
-    <ul>
-        <li class="menu-item"><span>Bier Bite (1)</span><span>$3</span></li>
-        <li>Zesty dried sausage snack from Uli's.</li>
-
-        <li class="menu-item"><span>The Pretzel</span><span>$9</span></li>
-        <li>7oz Bavarian pretzel from Kaffeeklatsch. Choice of mustard.</li>
-
-        <li class="menu-item"><span>German Potato Salad</span><span>$6</span></li>
-        <li>Golden potatoes, bacon, whole grain mustard, white onion, garlic & apple cider vinegar.</li>
-
-        <li class="menu-item"><span>Shoestring Fries</span><span>$6</span></li>
-        <li>Served with curry ketchup.</li>
-
-        <li class="menu-item"><span>Side Sauce</span><span>$0.50</span></li>
-        <li>Curry ketchup, garlic sauce, sweet hot mustard, whole grain mustard.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>From the Bar</h2>
-
-    <div class="category">Draft Beers</div>
-    <p>American “Pint” (13oz) $6 • Half Litre (17oz) $8 • Full Litre (34oz) $15</p>
-    <ul>
-        <li>Kochendorfer's Lager — 4.8%</li>
-        <li>Kochendorfer's Dark Lager — 5.3%</li>
-        <li>District Brewing Juice Almighty IPA — 6.9%</li>
-        <li>District Brewing Jurassic Amber — 6.0%</li>
-        <li>District Brewing Belgian Style Lager — 5.8%</li>
-        <li>Stoup Brewing Schwarzbier — 4.0%</li>
-        <li>Sierra Nevada Pale Ale — 5.6%</li>
-        <li>Sierra Nevada Celebration Fresh Hop IPA — 6.8%</li>
-    </ul>
-
-    <div class="category">Canned & Bottled</div>
-    <ul>
-        <li>Schilling “Dryabolical” Dry Cider — $6</li>
-        <li>San Juan Spiked Seltzer (Huckleberry) — $6</li>
-        <li>Asahi Super Dry 0.0% — $6</li>
-        <li>Peroni Nastro Azzurro 0.0% — $6</li>
-    </ul>
-
-    <div class="category">Wine</div>
-    <ul>
-        <li>Wind Storm Cabernet Sauvignon — Glass $8 / Bottle $28</li>
-        <li>Gearbox Chardonnay — Glass $8 / Bottle $28</li>
-        <li>Squealing Pig Sauvignon Blanc — Glass $11 / Bottle $38</li>
-        <li>Avissi Prosecco — Glass $9</li>
-    </ul>
-
-    <div class="category">House Cocktails</div>
-    <ul>
-        <li>The Radler — $8</li>
-        <li>Kochendorfer’s Lager + San Pellegrino Aranciata or Limonata</li>
-
-        <li>The Honey Bear — $10</li>
-        <li>Old Forester Bourbon, honey simple, apple cider, Angostura</li>
-
-        <li>The German Mule — $10</li>
-        <li>Jagermeister, Bundaberg ginger beer, blackberry liqueur, lime</li>
-
-        <li>The Aperol Spritz — $11</li>
-        <li>Aperol, Prosecco, soda</li>
-
-        <li>The Bavarian Coffee — $11</li>
-        <li>Rumple Minze, coffee, cold brew liqueur, half & half, whipped cream</li>
-
-        <li>The Elder — $15</li>
-        <li>Tanqueray, grapefruit, St. Germain, lemon, simple, tonic</li>
-    </ul>
-
-    <div class="category">Non‑Alcoholic</div>
-    <ul>
-        <li>Soda Water — $1</li>
-        <li>Tonic Water — $1</li>
-        <li>Coke / Diet Coke / Sprite — $3</li>
-        <li>Coffee — $3</li>
-        <li>Topo Chico — $5</li>
-        <li>Bundaberg Ginger Beer — $5</li>
-        <li>San Pellegrino Aranciata or Limonata — $5</li>
-        <li>Apple Cider — $5</li>
-    </ul>
-
-    <div class="category">Merchandise</div>
-    <ul>
-        <li>Kochendorfer’s American “Pint” Glass (13oz) — $6</li>
-        <li>Kochendorfer’s Half Litre Glass (17oz) — $7</li>
-        <li>Kochendorfer’s Full Litre Glass (34oz) — $10</li>
-    </ul>
-
-    <div class="category">Spirits</div>
-    <p>(Full list included exactly as provided. I can group or format it differently anytime.)</p>
 </section>
 
 <footer>

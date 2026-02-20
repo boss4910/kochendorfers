@@ -12,21 +12,28 @@
             background: #f7f7f7;
             color: #333;
         }
+
+        /* Smaller, centered logo */
         header img {
-            width: 100%;
+            width: 50%;
+            max-width: 450px;
             height: auto;
             display: block;
+            margin: 20px auto;
         }
+
         section {
             padding: 20px;
             max-width: 900px;
             margin: auto;
         }
+
         h2 {
             border-bottom: 2px solid #ddd;
             padding-bottom: 5px;
             margin-top: 40px;
         }
+
         .menu-button {
             display: inline-block;
             padding: 12px 20px;
@@ -39,6 +46,7 @@
         .menu-button:hover {
             background: #444;
         }
+
         footer {
             text-align: center;
             padding: 25px;
@@ -50,6 +58,26 @@
             color: #fff;
             text-decoration: underline;
         }
+
+        /* Highlighted sports announcement box */
+        .sports-box {
+            background: #e9f2ff;
+            border: 2px solid #c7dfff;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            margin: 30px auto;
+            max-width: 700px;
+        }
+        .sports-box h2 {
+            margin-top: 0;
+            border: none;
+            font-size: 26px;
+        }
+        .sports-box p {
+            font-size: 18px;
+            margin: 10px 0 0 0;
+        }
     </style>
 </head>
 <body>
@@ -59,19 +87,18 @@
 </header>
 
 <section>
-    <h2>We Are Now Open</h2>
+
+    <!-- Highlighted sports announcement -->
+    <div class="sports-box">
+        <h2>Catch Every Game Here</h2>
+        <p>We show all Mariners, Sounders, and Kraken games on our TVs throughout the bar.</p>
+    </div>
+
     <p><strong>Hours:</strong></p>
     <p>Sunday–Thursday: 11am–11pm</p>
     <p>Friday–Saturday: 11am–2am</p>
-<p><a href="tel:2064535032">(206) 453‑5032</a></p>
-
 
     <a class="menu-button" href="menu.pdf" target="_blank">View Menu (PDF)</a>
-</section>
-
-<section>
-    <h2>Photos</h2>
-    <p>Photos coming soon.</p>
 </section>
 
 <footer>
@@ -81,5 +108,4 @@
 
 </body>
 </html>
-
 

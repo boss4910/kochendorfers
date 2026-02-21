@@ -19,7 +19,16 @@
             max-width: 450px;
             height: auto;
             display: block;
-            margin: 20px auto;
+            margin: 20px auto 10px auto;
+        }
+
+        /* Tagline under logo */
+        .tagline {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 25px;
         }
 
         section {
@@ -78,12 +87,39 @@
             font-size: 18px;
             margin: 10px 0 0 0;
         }
+
+        /* Two-column layout for info + photo */
+        .info-with-photo {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .info-column {
+            flex: 1;
+        }
+
+        .photo-column img {
+            width: 100%;
+            max-width: 600px; /* 75% bigger than before */
+            border-radius: 8px;
+        }
+
+        /* Mobile stacking */
+        @media (max-width: 700px) {
+            .info-with-photo {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     </style>
 </head>
 <body>
 
 <header>
     <img src="logo.png" alt="Kochendorfer's Logo">
+    <p class="tagline">Cold beer at a reasonable price</p>
 </header>
 
 <section>
@@ -94,21 +130,37 @@
         <p>We show all Mariners, Sounders, and Kraken games on our TVs throughout the bar.</p>
     </div>
 
-    <p><strong>Hours:</strong></p>
-    <p>Sunday–Thursday: 11am–11pm</p>
-    <p>Friday–Saturday: 11am–2am</p>
+    <!-- Info + Photo side-by-side -->
+    <div class="info-with-photo">
 
-<p><strong>Phone:</strong> <a href="tel:2064535032">(206) 453‑5032</a></p>
+        <div class="info-column">
 
-<p><strong>Location:</strong>
-  <a href="https://maps.app.goo.gl/ixc4pjcubm9LgBg19" target="_blank">
-    4910 Leary Ave NW Seattle WA 98107
-  </a>
-</p>
+            <p style="font-size:18px; margin-bottom:20px;">
+                We’re a friendly neighborhood pub offering an eclectic variety of German street and tavern food. 
+                Featuring our take on a Doner Kebab, the Kebaburrito.
+            </p>
 
+            <p><strong>Hours:</strong></p>
+            <p>Sunday–Thursday: 11am–11pm</p>
+            <p>Friday–Saturday: 11am–2am</p>
 
+            <p><strong>Phone:</strong> <a href="tel:2064535032">(206) 453‑5032</a></p>
 
-    <a class="menu-button" href="menu.pdf" target="_blank">View Menu (PDF)</a>
+            <p><strong>Location:</strong>
+              <a href="https://maps.app.goo.gl/ixc4pjcubm9LgBg19" target="_blank">
+                4910 Leary Ave NW Seattle WA 98107
+              </a>
+            </p>
+
+            <a class="menu-button" href="menu.pdf" target="_blank">View Menu (PDF)</a>
+        </div>
+
+        <div class="photo-column">
+            <img src="food-photo.jpg" alt="Food and beer at Kochendorfer's">
+        </div>
+
+    </div>
+
 </section>
 
 <footer>

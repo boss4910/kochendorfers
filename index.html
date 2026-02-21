@@ -9,11 +9,11 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f7f7f7;
+            background: url('bavarian-bg.png') repeat;
+            background-size: 200px 200px;
             color: #333;
         }
 
-        /* Smaller, centered logo */
         header img {
             width: 50%;
             max-width: 450px;
@@ -22,11 +22,10 @@
             margin: 20px auto 10px auto;
         }
 
-        /* Tagline under logo */
         .tagline {
             text-align: center;
-            font-size: 28px;
-            font-weight: bold;
+            font-size: 32px;
+            font-weight: 800;
             margin-top: 0;
             margin-bottom: 25px;
         }
@@ -35,6 +34,8 @@
             padding: 20px;
             max-width: 900px;
             margin: auto;
+            background: white;
+            border-radius: 10px;
         }
 
         h2 {
@@ -68,7 +69,7 @@
             text-decoration: underline;
         }
 
-        /* Highlighted sports announcement box */
+        /* Sports box */
         .sports-box {
             background: #e9f2ff;
             border: 2px solid #c7dfff;
@@ -83,12 +84,42 @@
             border: none;
             font-size: 26px;
         }
-        .sports-box p {
-            font-size: 18px;
-            margin: 10px 0 0 0;
+
+        /* Trivia box */
+        .trivia-box {
+            background: #fff4d6;
+            border: 2px solid #f0c97d;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            margin: 30px auto;
+            max-width: 700px;
+        }
+        .trivia-box h2 {
+            margin-top: 0;
+            border: none;
+            font-size: 26px;
+            color: #8a5a00;
         }
 
-        /* Two-column layout for info + photo */
+        /* Beer special box */
+        .beer-box {
+            background: #e8ffe8;
+            border: 2px solid #b6e6b6;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            margin: 30px auto;
+            max-width: 700px;
+        }
+        .beer-box h2 {
+            margin-top: 0;
+            border: none;
+            font-size: 26px;
+            color: #0b6b0b;
+        }
+
+        /* Info + photo layout */
         .info-with-photo {
             display: flex;
             align-items: flex-start;
@@ -102,11 +133,10 @@
 
         .photo-column img {
             width: 100%;
-            max-width: 600px; /* 75% bigger than before */
+            max-width: 600px;
             border-radius: 8px;
         }
 
-        /* Mobile stacking */
         @media (max-width: 700px) {
             .info-with-photo {
                 flex-direction: column;
@@ -124,13 +154,25 @@
 
 <section>
 
-    <!-- Highlighted sports announcement -->
+    <!-- Sports Box -->
     <div class="sports-box">
         <h2>Catch Every Game Here</h2>
         <p>We show all Mariners, Sounders, and Kraken games on our TVs throughout the bar.</p>
     </div>
 
-    <!-- Info + Photo side-by-side -->
+    <!-- Trivia Box -->
+    <div class="trivia-box">
+        <h2>Monday Trivia Night</h2>
+        <p>Join us from 7:30–9:00pm for trivia, drinks, and prizes.</p>
+    </div>
+
+    <!-- Beer Special Box -->
+    <div class="beer-box">
+        <h2>Thirsty Thursday</h2>
+        <p>$10 1‑Litre Tankards of Georgetown Tavern beer — all day Thursday.</p>
+    </div>
+
+    <!-- Info + Photo -->
     <div class="info-with-photo">
 
         <div class="info-column">

@@ -2,214 +2,168 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kochendorfer's</title>
+    <title>Kochendorfer's — Ballard's Neighborhood Pub</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('bavarian-bg.png') repeat;
-            background-size: 200px 200px;
-            color: #333;
-        }
+    <meta name="description" content="Kochendorfer's is a friendly neighborhood pub in Ballard, Seattle offering German street and tavern food, cold beer, trivia nights, and live sports.">
 
-        header img {
-            width: 50%;
-            max-width: 450px;
-            height: auto;
-            display: block;
-            margin: 20px auto 10px auto;
-        }
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-        .tagline {
-            text-align: center;
-            font-size: 32px;
-            font-weight: 800;
-            margin-top: 0;
-            margin-bottom: 25px;
-        }
-
-        section {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-            background: white;
-            border-radius: 10px;
-        }
-
-        h2 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-            margin-top: 40px;
-        }
-
-        .menu-button {
-            display: inline-block;
-            padding: 12px 20px;
-            background: #222;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 15px;
-        }
-        .menu-button:hover {
-            background: #444;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            margin-top: 40px;
-            background: #222;
-            color: white;
-        }
-        footer a {
-            color: #fff;
-            text-decoration: underline;
-        }
-
-        /* Sports box */
-        .sports-box {
-            background: #e9f2ff;
-            border: 2px solid #c7dfff;
-            border-radius: 10px;
-            padding: 25px;
-            text-align: center;
-            margin: 30px auto;
-            max-width: 700px;
-        }
-        .sports-box h2 {
-            margin-top: 0;
-            border: none;
-            font-size: 26px;
-        }
-
-        /* Trivia box */
-        .trivia-box {
-            background: #fff4d6;
-            border: 2px solid #f0c97d;
-            border-radius: 10px;
-            padding: 25px;
-            text-align: center;
-            margin: 30px auto;
-            max-width: 700px;
-        }
-        .trivia-box h2 {
-            margin-top: 0;
-            border: none;
-            font-size: 26px;
-            color: #8a5a00;
-        }
-
-        /* Beer special box */
-        .beer-box {
-            background: #e8ffe8;
-            border: 2px solid #b6e6b6;
-            border-radius: 10px;
-            padding: 25px;
-            text-align: center;
-            margin: 30px auto;
-            max-width: 700px;
-        }
-        .beer-box h2 {
-            margin-top: 0;
-            border: none;
-            font-size: 26px;
-            color: #0b6b0b;
-        }
-
-        /* Info + photo layout */
-        .info-with-photo {
-            display: flex;
-            align-items: flex-start;
-            gap: 30px;
-            margin-top: 20px;
-        }
-
-        .info-column {
-            flex: 1;
-        }
-
-        .photo-column img {
-            width: 100%;
-            max-width: 600px;
-            border-radius: 8px;
-        }
-
-        @media (max-width: 700px) {
-            .info-with-photo {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-    <img src="logo.png" alt="Kochendorfer's Logo">
-    <p class="tagline">Cold Beer at a Reasonable Price</p>
+<!-- ═══════════════════ LOGO BANNER ═══════════════════ -->
+<header class="logo-banner">
+    <img src="kochendorfer-small-logo.jpg" alt="Kochendorfer's Logo" class="banner-logo">
 </header>
 
-<section>
-
-    <!-- Sports Box -->
-    <div class="sports-box">
-        <h2>Catch Every Game Here</h2>
-        <p>We show all Mariners, Sounders, and Kraken games on our TVs throughout the bar.</p>
-    </div>
-
-    <!-- Trivia Box -->
-    <div class="trivia-box">
-        <h2>Monday Trivia Night</h2>
-        <p>Join us from 7:30–9:00pm for trivia, drinks, and prizes.</p>
-    </div>
-
-    <!-- Beer Special Box -->
-    <div class="beer-box">
-        <h2>Thirsty Thursday</h2>
-        <p>$10 1‑Litre Tankards of Georgetown Tavern beer — all day Thursday.</p>
-    </div>
-
-    <!-- Info + Photo -->
-    <div class="info-with-photo">
-
-        <div class="info-column">
-
-            <p style="font-size:18px; margin-bottom:20px;">
-                We’re a friendly neighborhood pub offering an eclectic variety of German street and tavern food. 
-                Featuring our take on a Doner Kebab, the Kebaburrito.
-            </p>
-
-            <p><strong>Hours:</strong></p>
-            <p>Sunday–Thursday: 11am–11pm</p>
-            <p>Friday–Saturday: 11am–2am</p>
-
-            <p><strong>Phone:</strong> <a href="tel:2064535032">(206) 453‑5032</a></p>
-
-            <p><strong>Location:</strong>
-              <a href="https://maps.app.goo.gl/ixc4pjcubm9LgBg19" target="_blank">
-                4910 Leary Ave NW Seattle WA 98107
-              </a>
-            </p>
-
-            <a class="menu-button" href="menu.pdf" target="_blank">View Menu (PDF)</a>
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section class="hero" data-parallax-bg>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="tagline">Cold beer<span class="dot">.</span><br>At a reasonable price<span class="dot">.</span></h1>
+        <div class="hero-cta">
+            <a href="kochendorfer-menu.pdf" target="_blank" class="btn btn-primary">View Menu</a>
+            <a href="https://maps.app.goo.gl/ixc4pjcubm9LgBg19" target="_blank" class="btn btn-outline">Get Directions</a>
         </div>
-
-        <div class="photo-column">
-            <img src="food-photo.jpg" alt="Food and beer at Kochendorfer's">
-        </div>
-
     </div>
-
 </section>
 
-<footer>
-    Follow us on Instagram:  
-    <a href="https://instagram.com/kochendorfers_ballard" target="_blank">@kochendorfers_ballard</a>
+<!-- ═══════════════════ HIGHLIGHTS ═══════════════════ -->
+<section class="highlights parallax-section" data-parallax-speed="0.15">
+    <div class="container">
+        <div class="highlights-grid">
+
+            <div class="card card-sports fade-in">
+                <h2>Catch Every Game</h2>
+                <p>We show all Mariners, Sounders, and Kraken games on our TVs throughout the bar.</p>
+            </div>
+
+            <div class="card card-trivia fade-in">
+                <h2>Monday Trivia Night</h2>
+                <p>Join us from 7:30–9:00 pm for trivia, drinks, and prizes.</p>
+            </div>
+
+            <div class="card card-beer fade-in">
+                <h2>Thirsty Thursday</h2>
+                <p>$10 1-Litre Tankards of Georgetown Tavern beer — all day Thursday.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ ABOUT ═══════════════════ -->
+<section class="about parallax-section" data-parallax-speed="0.2">
+    <div class="container">
+        <div class="about-grid">
+
+            <div class="about-text fade-in">
+                <h2 class="section-heading">Your Neighborhood Pub<span class="dot">.</span></h2>
+                <p class="about-description">
+                    We're a friendly neighborhood pub offering an eclectic variety of German street 
+                    and tavern food. Featuring our take on a Döner Kebab, the <strong>Kebaburrito</strong>.
+                </p>
+
+                <div class="info-block">
+                    <div class="info-item">
+                        <h3>Hours</h3>
+                        <p>Sunday – Thursday: 11 am – 11 pm</p>
+                        <p>Friday – Saturday: 11 am – 2 am</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Phone</h3>
+                        <p><a href="tel:2064535032">(206) 453-5032</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Location</h3>
+                        <p>
+                            <a href="https://maps.app.goo.gl/ixc4pjcubm9LgBg19" target="_blank">
+                                4910 Leary Ave NW<br>Seattle, WA 98107
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <a class="btn btn-primary" href="kochendorfer-menu.pdf" target="_blank">View Menu (PDF)</a>
+            </div>
+
+            <div class="about-photo fade-in">
+                <img src="kochendorfer-food-photo.jpg" alt="Food and beer at Kochendorfer's">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div class="footer-brand">
+            <span class="footer-name">Kochendorfer's</span>
+            <span class="footer-address">4910 Leary Ave NW, Seattle WA 98107</span>
+        </div>
+        <div class="footer-social">
+            <span>Follow us on Instagram</span>
+            <a href="https://instagram.com/kochendorfers_ballard" target="_blank" aria-label="Instagram">
+                @kochendorfers_ballard
+            </a>
+        </div>
+    </div>
+    <div class="footer-copy">
+        <p>&copy; 2026 Kochendorfer's. All rights reserved.</p>
+    </div>
 </footer>
 
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const faders = document.querySelectorAll('.fade-in');
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.15 }
+        );
+        faders.forEach((el) => observer.observe(el));
+    } else {
+        faders.forEach((el) => el.classList.add('visible'));
+    }
+    const parallaxBg = document.querySelector('[data-parallax-bg]');
+    const parallaxSections = document.querySelectorAll('.parallax-section');
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!prefersReduced) {
+        let ticking = false;
+        function onScroll() {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const scrollY = window.scrollY;
+                    if (parallaxBg) {
+                        parallaxBg.style.backgroundPositionY = `-${scrollY * 0.5}px`;
+                    }
+                    parallaxSections.forEach((section) => {
+                        const rect = section.getBoundingClientRect();
+                        const speed = parseFloat(section.dataset.parallaxSpeed) || 0.15;
+                        const shift = (rect.top - window.innerHeight * 0.5) * speed;
+                        section.style.transform = `translateY(${shift}px)`;
+                    });
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    }
+});
+</script>
 </body>
 </html>
-
